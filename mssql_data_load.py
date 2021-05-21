@@ -2,7 +2,7 @@ import pandas as pd
 import pyodbc
 
 # Read the flat file and create a Dataframe.
-data = pd.read_csv (r'C:\Users\Bhavesh\Desktop\Test\Customer.csv')   
+data = pd.read_csv (r'C:\Users\Bhavesh\Desktop\Test\Customer.csv',sep = '|')   
 df = pd.DataFrame(data, columns= ['Name','Cust_I','Open_Dt','Consul_Dt','VAC_ID','DR_name','State','County','DOB','FLAG'])
 
 # Connect to SQL Server. These details will depending on the Database server.
